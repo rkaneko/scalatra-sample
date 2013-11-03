@@ -1,5 +1,15 @@
 # InventoryControl #
 
+### Contstruction
+
++ scalikejdbc
+
++ h2 database
+
++ twitter bootstrap 3
+
++ ssp
+
 ## Build & Run ##
 
 ```sh
