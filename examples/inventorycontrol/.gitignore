@@ -70,3 +70,4 @@ jrebel.lic
 
 # h2 database
 inventory_control.h2.db
+inventory_control.lock.db
