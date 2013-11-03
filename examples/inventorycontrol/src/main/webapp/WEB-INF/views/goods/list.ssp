@@ -1,15 +1,20 @@
 <% import com.rkaneko.model.TArrivalGoods %>
 <%@ val goodsList:List[TArrivalGoods] %>
 
-<table border="1">
+<div class="page-header">
+  <h2><span class="label label-info">Arrival Goods List</h2>
+</div>
+<table class="table table-bordered table-hover">
   <tbody>
     <tr>
-      <th>ID</th><th>arrival time</th>
+      <th>ID</th><th>goodsId</th><th>arrival time</th><th>quantity</th>
     </tr>
     #for (goods <- goodsList)
     <tr>
       <td><%= goods.id %></td>
+      <td><%= goods.goodsId %></td>
       <td><%= goods.arrivedAt.toString() %></td>
+      <td><%= goods.quantity %></td>
     </tr>
     #end
   </tbody>
